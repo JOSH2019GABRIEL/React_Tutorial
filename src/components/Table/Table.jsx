@@ -46,13 +46,13 @@ const List = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell align="right">Product</TableCell>
-            <TableCell align="right">Customer_Name</TableCell>
-            <TableCell align="right">Date</TableCell>
-            <TableCell align="right">Amount</TableCell>
-            <TableCell align="right">Method</TableCell>
-            <TableCell align="right">Status</TableCell>
+            <TableCell className="tableCell">ID</TableCell>
+            <TableCell className="tableCell" align="right">Product</TableCell>
+            <TableCell className="tableCell" align="right">Customer_Name</TableCell>
+            <TableCell className="tableCell" align="right">Date</TableCell>
+            <TableCell className="tableCell" align="right">Amount</TableCell>
+            <TableCell className="tableCell" align="right">Method</TableCell>
+            <TableCell className="tableCell" align="right">Status</TableCell>
 
           </TableRow>
         </TableHead>
@@ -64,12 +64,12 @@ const List = () => {
               <TableCell component="th" scope="row">
                 {row.id}
               </TableCell>
-              <TableCell align="right">{row.product}</TableCell>
-              <TableCell align="right">{row.customer}</TableCell>
-              <TableCell align="right">{row.date}</TableCell>
-              <TableCell align="right">{row.amount}</TableCell>
-              <TableCell align="right">{row.method}</TableCell>
-              <TableCell align="right">
+              <TableCell className="tableCell" align="right">{row.product}</TableCell>
+              <TableCell className="tableCell" align="right">{row.customer}</TableCell>
+              <TableCell className="tableCell" align="right">{row.date}</TableCell>
+              <TableCell className="tableCell" align="right">{row.amount}</TableCell>
+              <TableCell className="tableCell" align="right">{row.method}</TableCell>
+              <TableCell className="tableCell" align="right">
                 <span className={`status ${row.status}`}>{row.status}</span>
                 </TableCell>
               
